@@ -3,12 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SpelBeterApp.Views.LoginPage">
     <ContentPage.Content>
-        <StackLayout Margin="5, 50, 5, 0"
+        <StackLayout Margin="25, 50, 25, 0"
                      VerticalOptions="Start"
-                     HorizontalOptions="Center"
+                     HorizontalOptions="FillAndExpand"
                      Spacing="10">
+            <Image
+                x:Name="Image_loginScreen"
+                Source="sb_logo.jpg">
+            </Image>
+            <Label
+                x:Name="Label_appTitle"
+                Text="SPEL BETER!"
+                TextColor="Firebrick"             
+                FontSize="Large"
+                HorizontalOptions="Center">
+            </Label>
             <Entry
                 x:Name="Entry_username"
+                Margin="0, 20, 0, 0"
                 Placeholder="E-mail..."
                 PlaceholderColor="DimGray"
                 TextColor="Black"

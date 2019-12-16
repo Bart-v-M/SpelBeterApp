@@ -114,4 +114,7 @@
       <Name>SpelBeterApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sb_logo.jpg" />
+  </ItemGroup>
 </Project>
