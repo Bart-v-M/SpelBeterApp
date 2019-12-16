@@ -14,13 +14,17 @@ namespace SpelBeterApp.Views
 	{
 		public LoginPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            new MainPage();
-            Label_loginButton.TextColor = Color.Green;
+            NavigateTo(new MainPage());
+        }
+
+        public async void NavigateTo(Page page)
+        {
+            await Navigation.PushModalAsync(page);
         }
     }
 }

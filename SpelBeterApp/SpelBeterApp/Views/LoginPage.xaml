@@ -6,7 +6,7 @@
         <StackLayout Margin="5, 50, 5, 0"
                      VerticalOptions="Start"
                      HorizontalOptions="Center"
-                     Spacing="5">
+                     Spacing="10">
             <Entry
                 x:Name="Entry_username"
                 Placeholder="E-mail..."
@@ -21,17 +21,21 @@
                 TextColor="Black"
                 BackgroundColor="White">
             </Entry>
-            <Label 
-                x:Name="Label_loginButton"
+            <StackLayout Padding="8"  Margin="0, 10, 0, 0" VerticalOptions="Start" HorizontalOptions="Fill"  BackgroundColor="Firebrick">
+                <Label 
+                x:Name="Label_loginButton"    
                 Text="Inloggen"
+                FontSize="Medium"
                 TextColor="White"
-                BackgroundColor="Red"
+                BackgroundColor="Firebrick"
                 VerticalTextAlignment="Center"
-                HorizontalTextAlignment="Center">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                </Label.GestureRecognizers>
-            </Label>
+                HorizontalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
