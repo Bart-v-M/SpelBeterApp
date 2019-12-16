@@ -13,13 +13,13 @@ namespace SpelBeterApp
         {
             InitializeComponent();
 
-
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            MainPage = new LoginPage();
         }
 
         protected override void OnSleep()
