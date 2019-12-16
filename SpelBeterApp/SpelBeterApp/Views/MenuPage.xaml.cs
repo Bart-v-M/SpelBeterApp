@@ -20,7 +20,7 @@ namespace SpelBeterApp.Views
             {
                 new HomeMenuItem {Id = MenuItemType.Calendar, Title="Kalender" },
                 new HomeMenuItem {Id = MenuItemType.Settings, Title="Instellingen" },
-                new HomeMenuItem {Id = MenuItemType.Settings, Title="Uitloggen" }
+                new HomeMenuItem {Id = MenuItemType.Logout, Title="Uitloggen" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
