@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SpelBeterApp.Views.NewAccountPage">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Registreren"/>
-    </ContentPage.ToolbarItems>
+             x:Class="SpelBeterApp.Views.NewAccountPage"
+             NavigationPage.HasNavigationBar="True"
+             NavigationPage.HasBackButton="True"
+             NavigationPage.TitleView="True"
+             NavigationPage.BackButtonTitle="Terug"   
+             Title="Registreren">
     <ContentPage.Content>
-        <StackLayout Margin="25, 0, 25, 0"
-                     VerticalOptions="Start"
+        <StackLayout Margin="25, 25, 25, 0"
+                     VerticalOptions="StartAndExpand"
                      HorizontalOptions="FillAndExpand">
             <Label 
                 x:Name="Label_mandatoryInput"
@@ -66,7 +68,7 @@
             <Label 
                 x:Name="Label_registerButton"    
                 Margin="0, 25, 0, 0"
-                HeightRequest="35"
+                HeightRequest="40"
                 Text="Registreren"
                 FontSize="Medium"
                 FontAttributes="Bold"

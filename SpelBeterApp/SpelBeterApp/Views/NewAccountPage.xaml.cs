@@ -16,23 +16,28 @@ namespace SpelBeterApp.Views
 		{
 			InitializeComponent();
 
+            // Set info text
             Label_mandatoryInput.Text = info_makeNewAccount;
-            NavigationPage.SetHasBackButton(this, true);
 		}
 
         string info_makeNewAccount =
             "Je kunt aan een dagelijkse test meedoen als je je registreert bij Spel Beter!" 
             + Environment.NewLine 
-            + "Invoervelden met een* zijn verplicht.";        
+            + "Invoervelden met een * zijn verplicht.";        
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             NavigateTo(new MainPage());
         }
 
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            NavigateTo(new LoginPage());
+        }
+
         private async void NavigateTo(Page page)
         {
-            await Navigation.PushModalAsync(page);
+            await Navigation.PushModalAsync(new NavigationPage(page));
         }
     }
 }

@@ -29,7 +29,9 @@ namespace SpelBeterApp.Views
 
         private async void NavigateTo(Page page)
         {
-            await Navigation.PushModalAsync(new NavigationPage(page));
+            //await Navigation.PopToRootAsync();
+
+            await Navigation.PushAsync(page);
         }    
     }
 }

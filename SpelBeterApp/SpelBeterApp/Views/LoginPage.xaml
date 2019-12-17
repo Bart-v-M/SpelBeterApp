@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SpelBeterApp.Views.LoginPage">
+             x:Class="SpelBeterApp.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.BackButtonTitle="Terug">
     <ContentPage.Content>
-        <StackLayout Margin="25, 50, 25, 0"
+        <StackLayout Margin="25, 25, 25, 0"
                      VerticalOptions="Start"
                      HorizontalOptions="FillAndExpand"
                      Spacing="10">
@@ -37,7 +39,7 @@
             <Label 
                 x:Name="Label_loginButton"    
                 Margin="0, 10, 0, 0"
-                HeightRequest="35"
+                HeightRequest="40"
                 Text="Inloggen"
                 FontSize="Medium"
                 FontAttributes="Bold"
