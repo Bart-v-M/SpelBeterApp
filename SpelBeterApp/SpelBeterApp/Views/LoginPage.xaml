@@ -26,15 +26,13 @@
                 Margin="0, 20, 0, 0"
                 Placeholder="E-mail..."
                 PlaceholderColor="DimGray"
-                TextColor="Black"
-                BackgroundColor="White">
+                TextColor="Black">
             </Entry>
             <Entry
                 x:Name="Entry_password"
                 Placeholder="Wachtwoord..."
                 PlaceholderColor="DimGray"
-                TextColor="Black"
-                BackgroundColor="White">
+                TextColor="Black">
             </Entry>
             <Label 
                 x:Name="Label_loginButton"    

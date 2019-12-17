@@ -19,11 +19,19 @@ namespace SpelBeterApp.iOS
         // visible.
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
-        //
+        //    
+
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            UIView statusBar = UIApplication.SharedApplication.ValueForKey(new NSString("statusBar")) as UIView;
+            if (statusBar.RespondsToSelector(new ObjCRuntime.Selector("setBackgroundColor:")))
+            {
+                statusBar.BackgroundColor = UIColor.FromRGB(178, 34, 34);
+                statusBar.TintColor = UIColor.White;
+            }
 
             return base.FinishedLaunching(app, options);
         }

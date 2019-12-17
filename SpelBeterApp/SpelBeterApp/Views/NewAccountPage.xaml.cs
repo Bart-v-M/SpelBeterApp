@@ -17,8 +17,8 @@ namespace SpelBeterApp.Views
 			InitializeComponent();
 
             // Set info text
-            Label_mandatoryInput.Text = info_makeNewAccount;
-		}
+            Label_pageInfo.Text = info_makeNewAccount;
+        }
 
         string info_makeNewAccount =
             "Je kunt aan een dagelijkse test meedoen als je je registreert bij Spel Beter!" 

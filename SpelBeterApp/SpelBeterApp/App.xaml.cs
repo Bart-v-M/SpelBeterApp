@@ -12,21 +12,13 @@ namespace SpelBeterApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
-            {
-                BarBackgroundColor = Color.Firebrick,
-                BarTextColor = Color.White
-            };
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
-            MainPage = new NavigationPage(new LoginPage())
-            {
-                BarBackgroundColor = Color.Firebrick,
-                BarTextColor = Color.White
-            };
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnSleep()

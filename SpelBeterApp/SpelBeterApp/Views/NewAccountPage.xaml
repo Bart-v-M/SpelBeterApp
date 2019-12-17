@@ -12,7 +12,7 @@
                      VerticalOptions="StartAndExpand"
                      HorizontalOptions="FillAndExpand">
             <Label 
-                x:Name="Label_mandatoryInput"
+                x:Name="Label_pageInfo"
                 TextColor="Black"
                 FontSize="Small"
                 HorizontalOptions="StartAndExpand">
