@@ -36,7 +36,7 @@
             </Entry>
             <Label 
                 x:Name="Label_loginButton"    
-                Margin="0, 10, 0, 0"
+                Margin="0, 15, 0, 0"
                 HeightRequest="35"
                 Text="Inloggen"
                 FontSize="Medium"
@@ -49,6 +49,12 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Label.GestureRecognizers>
             </Label>
+            <Button
+                x:Name="Label_goToMakeAccountButton"
+                Margin="0, 10, 0, 0"
+                Text="Account aanmaken"
+                Clicked="Label_goToMakeAccountButton_Clicked">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

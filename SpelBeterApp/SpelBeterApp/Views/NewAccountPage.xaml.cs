@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace SpelBeterApp.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LoginPage : ContentPage
+	public partial class NewAccountPage : ContentPage
 	{
-		public LoginPage ()
+		public NewAccountPage ()
 		{
-			InitializeComponent();
+			InitializeComponent ();
 		}
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
@@ -22,14 +22,9 @@ namespace SpelBeterApp.Views
             NavigateTo(new MainPage());
         }
 
-        private void Label_goToMakeAccountButton_Clicked(object sender, EventArgs e)
-        {
-            NavigateTo(new NewAccountPage());
-        }
-
         private async void NavigateTo(Page page)
         {
             await Navigation.PushModalAsync(page);
-        }    
+        }
     }
 }
