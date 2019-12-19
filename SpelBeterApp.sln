@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpelBeterApp.Android", "Spe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpelBeterApp.iOS", "SpelBeterApp\SpelBeterApp.iOS\SpelBeterApp.iOS.csproj", "{FCA68ED1-F090-46FC-9431-BCAA7B082692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpelBeterApp", "SpelBeterApp\SpelBeterApp\SpelBeterApp.csproj", "{BF2531EF-A1C6-4062-8981-F54DA51E60B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpelBeterApp", "SpelBeterApp\SpelBeterApp\SpelBeterApp.csproj", "{BF2531EF-A1C6-4062-8981-F54DA51E60B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

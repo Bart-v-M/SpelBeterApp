@@ -19,17 +19,20 @@ namespace SpelBeterApp.Views
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            NavigateTo(new MainPage());
+            async void NavigateTo()
+            {
+                await Navigation.PushModalAsync(new MainPage());
+            }
+            NavigateTo();
         }
 
         private void Label_goToMakeAccountButton_Clicked(object sender, EventArgs e)
         {
-            NavigateTo(new NewAccountPage());
+            async void NavigateTo()
+            {
+                await Navigation.PushAsync(new NewAccountPage());
+            }
+            NavigateTo();
         }
-
-        private async void NavigateTo(Page page)
-        {
-            await Navigation.PushAsync(page);
-        }    
     }
 }

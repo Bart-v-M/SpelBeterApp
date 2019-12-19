@@ -27,13 +27,11 @@ namespace SpelBeterApp.Views
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            NavigateTo(new MainPage());
-        }
-
-        private async void NavigateTo(Page page)
-        {
-            //await Navigation.PushAsync(new NavigationPage(page));
-            await Navigation.PushModalAsync(page);
+            async void NavigateTo()
+            {
+                await Navigation.PushModalAsync(new MainPage());
+            }
+            NavigateTo();
         }
     }
 }

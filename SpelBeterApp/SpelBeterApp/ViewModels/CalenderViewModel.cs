@@ -20,7 +20,7 @@ namespace SpelBeterApp.ViewModels
             Title = "Kies een speldatum";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
+           
             MessagingCenter.Subscribe<NewItemPage, Item>(this, "Toevoegen", async (obj, item) =>
             {
                 var newItem = item as Item;
