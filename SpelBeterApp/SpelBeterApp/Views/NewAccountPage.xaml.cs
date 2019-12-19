@@ -30,14 +30,10 @@ namespace SpelBeterApp.Views
             NavigateTo(new MainPage());
         }
 
-        private void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-            NavigateTo(new LoginPage());
-        }
-
         private async void NavigateTo(Page page)
         {
-            await Navigation.PushModalAsync(new NavigationPage(page));
+            //await Navigation.PushAsync(new NavigationPage(page));
+            await Navigation.PushModalAsync(page);
         }
     }
 }
