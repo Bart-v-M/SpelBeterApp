@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpelBeterApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,11 +28,22 @@ namespace SpelBeterApp.Views
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            async void NavigateTo()
+            // Set background and text color -->
+            App.currentPage = new NavigationPage(new CalenderPage())
             {
-                await Navigation.PushModalAsync(new MainPage());
-            }
-            NavigateTo();
+                BarBackgroundColor = Constants.backgroundColor,
+                BarTextColor = Constants.textColor
+            };
+
+            // User logs in with new account -->
+            App.masterDetailPage = new MainPage
+            {
+                Detail = App.currentPage,
+                Master = App.menuPage = new MenuPage()
+            };
+
+            // Set current MainPage of Application
+            Application.Current.MainPage = App.masterDetailPage;
         }
     }
 }

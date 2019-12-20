@@ -46,7 +46,7 @@
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    <TapGestureRecognizer Tapped="Label_LoginButton_Tapped"/>
                 </Label.GestureRecognizers>
             </Label>
             <Button

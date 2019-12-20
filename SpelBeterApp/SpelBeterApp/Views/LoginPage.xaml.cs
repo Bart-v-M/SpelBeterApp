@@ -13,14 +13,14 @@ namespace SpelBeterApp.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LoginPage : ContentPage
 	{
-		public LoginPage ()
+		public LoginPage()
 		{
 			InitializeComponent();
 		}
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            //
+        private void Label_LoginButton_Tapped(object sender, EventArgs e)
+        { 
+            // Set background and text color -->
             App.currentPage = new NavigationPage(new CalenderPage())
             {
                 BarBackgroundColor = Constants.backgroundColor,
@@ -28,21 +28,19 @@ namespace SpelBeterApp.Views
             };
 
             // User logs in and is verified -->
-            App.masterDetailPage = new MainPage();
-       
-            App.masterDetailPage.Detail = App.currentPage;
-            App.masterDetailPage.Master = (App.masterPage = new MenuPage());
+            App.masterDetailPage = new MainPage
+            {
+                Detail = App.currentPage,
+                Master = App.menuPage = new MenuPage()
+            };
 
-            App.Current.MainPage = App.masterDetailPage;
+            // Set current MainPage of Application
+            Application.Current.MainPage = App.masterDetailPage; 
         }
 
         private void Label_goToMakeAccountButton_Clicked(object sender, EventArgs e)
         {
-            async void NavigateTo()
-            {
-                await Navigation.PushAsync(new NewAccountPage());
-            }
-            NavigateTo();
+            Navigation.PushAsync(new NewAccountPage());
         }
     }
 }

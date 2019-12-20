@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SpelBeterApp.Views;
+using SpelBeterApp.Models;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SpelBeterApp
@@ -15,7 +16,7 @@ namespace SpelBeterApp
         public static MainPage masterDetailPage;
 
         // This is the side menu. Used for navigation. This will swap detail pages.
-        public static MenuPage masterPage;
+        public static MenuPage menuPage;
 
         public App()
         {
@@ -23,8 +24,8 @@ namespace SpelBeterApp
 
             MainPage = new NavigationPage(new LoginPage())
             {
-                BarBackgroundColor = Color.Firebrick,
-                BarTextColor = Color.White
+                BarBackgroundColor = Constants.backgroundColor,
+                BarTextColor = Constants.textColor
             };
         }
 
