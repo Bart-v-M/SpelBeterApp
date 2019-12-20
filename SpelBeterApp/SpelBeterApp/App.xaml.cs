@@ -8,10 +8,20 @@ namespace SpelBeterApp
 {
     public partial class App : Application
     {
+        public static NavigationPage currentPage; // current detail page
+        public static CalenderPage calenderPage;
+
+        // This is the master detail page. It contains both the master and detail page. The detail page can be swapped by the user via the master page. (Navigation side menu)
+        public static MainPage masterDetailPage;
+
+        // This is the side menu. Used for navigation. This will swap detail pages.
+        public static MenuPage masterPage;
+
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage())
+
+            MainPage = new NavigationPage(new LoginPage())
             {
                 BarBackgroundColor = Color.Firebrick,
                 BarTextColor = Color.White
@@ -20,12 +30,7 @@ namespace SpelBeterApp
 
         protected override void OnStart()
         {
-            // Handle when your app starts
-            MainPage = new NavigationPage(new LoginPage())
-            {
-                BarBackgroundColor = Color.Firebrick,
-                BarTextColor = Color.White
-            };
+            // Handle when your app starts   
         }
 
         protected override void OnSleep()

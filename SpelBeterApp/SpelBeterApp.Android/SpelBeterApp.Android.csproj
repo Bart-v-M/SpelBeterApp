@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
@@ -96,7 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SpelBeterApp\SpelBeterApp.csproj">
-      <Project>{F3F9C392-A648-4621-87A6-5D26139F6849}</Project>
+      <Project>{BF2531EF-A1C6-4062-8981-F54DA51E60B6}</Project>
       <Name>SpelBeterApp</Name>
     </ProjectReference>
   </ItemGroup>

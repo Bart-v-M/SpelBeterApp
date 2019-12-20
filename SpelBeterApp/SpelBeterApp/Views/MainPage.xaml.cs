@@ -27,7 +27,7 @@ namespace SpelBeterApp.Views
                 switch (id)
                 {
                     case (int)MenuItemType.Calendar:
-                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                        MenuPages.Add(id, new NavigationPage(new CalenderPage()));
                         break;
                     case (int)MenuItemType.Settings:
                         MenuPages.Add(id, new NavigationPage(new SettingsPage()));
@@ -35,6 +35,17 @@ namespace SpelBeterApp.Views
                     case (int)MenuItemType.Logout:
                         MenuPages.Add(id, new NavigationPage(new LogoutPage()));
                         break;
+                        /*
+                        case (int)MenuItemType.Calendar:
+                            MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                            break;
+                        case (int)MenuItemType.Settings:
+                            MenuPages.Add(id, new NavigationPage(new SettingsPage()));
+                            break;
+                        case (int)MenuItemType.Logout:
+                            MenuPages.Add(id, new NavigationPage(new LogoutPage()));
+                            break;
+                            */
                 }
             }
 

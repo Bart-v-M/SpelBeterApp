@@ -14,11 +14,11 @@ using SpelBeterApp.ViewModels;
 namespace SpelBeterApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemsPage : ContentPage
+    public partial class CalenderPage : ContentPage
     {
         CalenderViewModel viewModel;
 
-        public ItemsPage()
+        public CalenderPage()
         {
             InitializeComponent();
 
