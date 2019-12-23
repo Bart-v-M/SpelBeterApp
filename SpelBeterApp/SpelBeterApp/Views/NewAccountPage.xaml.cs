@@ -30,7 +30,7 @@ namespace SpelBeterApp.Views
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             // Set background and text color -->
-            App.currentPage = new NavigationPage(new CalenderPage());
+            App.currentPage = new NavigationPage(new CalendarPage());
 
             // User logs in with a new account -->
             App.masterDetailPage = new MainPage

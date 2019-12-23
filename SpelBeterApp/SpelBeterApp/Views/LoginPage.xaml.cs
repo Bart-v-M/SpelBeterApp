@@ -20,8 +20,8 @@ namespace SpelBeterApp.Views
 
         private void Label_LoginButton_Tapped(object sender, EventArgs e)
         {
-            // Set background and text color -->
-            App.currentPage = new NavigationPage(new CalenderPage());
+            // Send page to Calendar Page
+            App.currentPage = new NavigationPage(new CalendarPage());
 
             // User logs in and is verified -->
             App.masterDetailPage = new MainPage

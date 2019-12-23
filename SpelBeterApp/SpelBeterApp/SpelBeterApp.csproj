@@ -15,11 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\CalenderPage.xaml.cs">
-      <DependentUpon>CalenderPage.xaml</DependentUpon>
+    <Compile Update="Views\CalendarPage.xaml.cs">
+      <DependentUpon>CalendarPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\CalenderDetailPage.xaml.cs">
-      <DependentUpon>CalenderDetailPage.xaml</DependentUpon>
+    <Compile Update="Views\CalendarDetailPage.xaml.cs">
+      <DependentUpon>CalendarDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>

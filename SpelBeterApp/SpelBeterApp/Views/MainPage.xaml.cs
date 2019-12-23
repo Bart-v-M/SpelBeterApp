@@ -27,7 +27,7 @@ namespace SpelBeterApp.Views
                 switch (id)
                 {
                     case (int)MenuItemType.Calendar:
-                        MenuPages.Add(id, new NavigationPage(new CalenderPage()));
+                        MenuPages.Add(id, new NavigationPage(new CalendarPage()));
                         break;
                     case (int)MenuItemType.Settings:
                         MenuPages.Add(id, new NavigationPage(new SettingsPage()));

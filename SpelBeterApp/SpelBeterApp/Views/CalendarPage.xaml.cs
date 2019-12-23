@@ -14,15 +14,15 @@ using SpelBeterApp.ViewModels;
 namespace SpelBeterApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CalenderPage : ContentPage
+    public partial class CalendarPage : ContentPage
     {
-        CalenderViewModel viewModel;
+        CalendarViewModel viewModel;
 
-        public CalenderPage()
+        public CalendarPage()
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new CalenderViewModel();
+            BindingContext = viewModel = new CalendarViewModel();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -31,7 +31,7 @@ namespace SpelBeterApp.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new CalenderDetailViewModel(item)));
+            await Navigation.PushAsync(new ItemDetailPage(new CalendarDetailViewModel(item)));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;

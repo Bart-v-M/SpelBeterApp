@@ -11,9 +11,9 @@ namespace SpelBeterApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemDetailPage : ContentPage
     {
-        CalenderDetailViewModel viewModel;
+        CalendarDetailViewModel viewModel;
 
-        public ItemDetailPage(CalenderDetailViewModel viewModel)
+        public ItemDetailPage(CalendarDetailViewModel viewModel)
         {
             InitializeComponent();
 
@@ -30,7 +30,7 @@ namespace SpelBeterApp.Views
                 Description = "This is an item description."
             };
 
-            viewModel = new CalenderDetailViewModel(item);
+            viewModel = new CalendarDetailViewModel(item);
             BindingContext = viewModel;
         }
     }

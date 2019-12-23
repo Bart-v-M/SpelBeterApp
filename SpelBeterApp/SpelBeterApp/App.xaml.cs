@@ -9,6 +9,9 @@ namespace SpelBeterApp
 {
     public partial class App : Application
     {
+        // FilePath
+        public static string FilePath;
+        
         // Current detail page.
         public static NavigationPage currentPage;
 
@@ -19,11 +22,13 @@ namespace SpelBeterApp
         public static MenuPage menuPage;
 
         // Initialization of the app and the mainpage, which starts at the login page.
-        public App()
+        public App(string filePath)
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new LoginPage());
+
+            FilePath = filePath;
         }
 
         protected override void OnStart()

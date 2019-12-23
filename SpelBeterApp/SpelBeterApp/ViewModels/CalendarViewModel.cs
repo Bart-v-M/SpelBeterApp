@@ -10,12 +10,12 @@ using SpelBeterApp.Views;
 
 namespace SpelBeterApp.ViewModels
 {
-    public class CalenderViewModel : BaseViewModel
+    public class CalendarViewModel : BaseViewModel
     {
         public ObservableCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
-        public CalenderViewModel()
+        public CalendarViewModel()
         {
             Title = "Kies een speldatum";
             Items = new ObservableCollection<Item>();
