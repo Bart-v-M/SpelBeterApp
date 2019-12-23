@@ -9,24 +9,21 @@ namespace SpelBeterApp
 {
     public partial class App : Application
     {
-        public static NavigationPage currentPage; // current detail page
-        public static CalenderPage calenderPage;
+        // Current detail page.
+        public static NavigationPage currentPage;
 
-        // This is the master detail page. It contains both the master and detail page. The detail page can be swapped by the user via the master page. (Navigation side menu)
+        // Master detail page: it contains both the master and the detail page. 
         public static MainPage masterDetailPage;
 
-        // This is the side menu. Used for navigation. This will swap detail pages.
+        // This is the side menu page used for navigation. It swaps detail pages.
         public static MenuPage menuPage;
 
+        // Initialization of the app and the mainpage, which starts at the login page.
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage())
-            {
-                BarBackgroundColor = Constants.backgroundColor,
-                BarTextColor = Constants.textColor
-            };
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
@@ -45,3 +42,8 @@ namespace SpelBeterApp
         }
     }
 }
+
+
+
+//Code used before:
+//public static CalenderPage calenderPage;

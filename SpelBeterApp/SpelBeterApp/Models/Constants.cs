@@ -7,7 +7,7 @@ namespace SpelBeterApp.Models
 {
     public static class Constants
     {
-        public static readonly Color backgroundColor = Color.Firebrick;
-        public static readonly Color textColor = Color.White;
+        //public static readonly Color backgroundColor = Color.Firebrick;
+        //public static readonly Color textColor = Color.White;
     }
 }

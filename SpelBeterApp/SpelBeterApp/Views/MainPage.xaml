@@ -3,12 +3,6 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:SpelBeterApp.Views"
             x:Class="SpelBeterApp.Views.MainPage">
-     <!--
-    <MasterDetailPage.Master>
-        <views:MenuPage />
-    </MasterDetailPage.Master>
-    -->
-
     <MasterDetailPage.Detail>
         <NavigationPage>
             <NavigationPage.Icon>

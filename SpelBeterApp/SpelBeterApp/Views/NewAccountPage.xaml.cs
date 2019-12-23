@@ -17,10 +17,11 @@ namespace SpelBeterApp.Views
 		{
 			InitializeComponent();
 
-            // Set info text
+            // Set info text -->
             Label_pageInfo.Text = info_makeNewAccount;
         }
 
+        // Info text
         string info_makeNewAccount =
             "Je kunt aan een dagelijkse test meedoen als je je registreert bij Spel Beter!" 
             + Environment.NewLine 
@@ -29,20 +30,16 @@ namespace SpelBeterApp.Views
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             // Set background and text color -->
-            App.currentPage = new NavigationPage(new CalenderPage())
-            {
-                BarBackgroundColor = Constants.backgroundColor,
-                BarTextColor = Constants.textColor
-            };
+            App.currentPage = new NavigationPage(new CalenderPage());
 
-            // User logs in with new account -->
+            // User logs in with a new account -->
             App.masterDetailPage = new MainPage
             {
-                Detail = App.currentPage,
-                Master = App.menuPage = new MenuPage()
+                Master = App.menuPage = new MenuPage(),
+                Detail = App.currentPage
             };
 
-            // Set current MainPage of Application
+            // Set current MainPage of the Application -->
             Application.Current.MainPage = App.masterDetailPage;
         }
     }

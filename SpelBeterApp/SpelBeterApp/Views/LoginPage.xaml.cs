@@ -19,19 +19,15 @@ namespace SpelBeterApp.Views
 		}
 
         private void Label_LoginButton_Tapped(object sender, EventArgs e)
-        { 
+        {
             // Set background and text color -->
-            App.currentPage = new NavigationPage(new CalenderPage())
-            {
-                BarBackgroundColor = Constants.backgroundColor,
-                BarTextColor = Constants.textColor
-            };
+            App.currentPage = new NavigationPage(new CalenderPage());
 
             // User logs in and is verified -->
             App.masterDetailPage = new MainPage
             {
-                Detail = App.currentPage,
-                Master = App.menuPage = new MenuPage()
+                Master = App.menuPage = new MenuPage(),
+                Detail = App.currentPage
             };
 
             // Set current MainPage of Application
